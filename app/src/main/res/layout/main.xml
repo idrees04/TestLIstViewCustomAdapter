@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    tools:context="com.practice.testlistviewcustomadapter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical">
+        <!--<ImageButton-->
+        <!--android:id="@+id/imgbtn_Attendance"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Take Attendance"-->
+        <!---->
+        <!--android:src="@drawable/attendance"/>-->
+        <Button
+            android:id="@+id/btn_Attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Take Attendance"
+            />
+
+        <Button
+            android:id="@+id/btn_Insert_Schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="INSERT SCHEDULE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_View_Attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="17"
+            android:text="VIEW ATTENDANCE" />
+        <Button
+            android:id="@+id/btn_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="17"
+            android:text="Task" />
+
+        <Button
+            android:id="@+id/btn_View_Schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="16"
+            android:text="VIEW Schedule" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="30dp"
+    android:textColor="#000"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/text_Lt"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/Teacher_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:textColor="#000">
+
+        <TextView
+            android:id="@+id/text_teacher_name"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000" />
+
+        <!--<Spinner-->
+            <!--android:id="@+id/spinner_teacher_name"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="0dp"-->
+            <!--android:layout_marginTop="-20dp"></Spinner>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioButton_group_PresentAbsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton_present"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:text="Present"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_absent"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:text="Absent"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txtStartTimePicker"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:text="LATE"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/txtEndTimePicker"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:text="LEAVE"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_marginTop="3dp"
+            />
+        <!--<EditText-->
+            <!--android:id="@+id/etxtStartTimePicker"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:text="LATE"-->
+            <!--android:textSize="8sp" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/etxtEndTimePicker"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:text="LEAVE"-->
+            <!--android:textSize="9sp"-->
+            <!--android:visibility="invisible" />-->
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/submit_Attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="20"
+        android:background="@android:color/transparent"
+        android:src="@drawable/biit"
+        android:visibility="visible"
+        android:gravity="center"
+        />
+    <!--android:background="@android:color/holo_red_light"-->
+</LinearLayout>

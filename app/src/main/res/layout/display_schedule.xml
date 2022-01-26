@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#000"
+        android:weightSum="100"
+        >
+        <TextView
+            android:id="@+id/text_head_viewclass"
+            android:textSize="15sp"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Class"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            />
+
+        <TextView
+            android:id="@+id/text_head_viewteacher"
+            android:textSize="15sp"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Teacher"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            />
+
+        <TextView
+            android:id="@+id/text_head_viewstarttime"
+            android:textSize="15sp"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start TIme"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            />
+
+        <TextView
+            android:id="@+id/text_head_viewendtime"
+            android:textSize="15sp"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="End Time"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            />
+        <TextView
+            android:id="@+id/text_head_viewday"
+            android:textSize="15sp"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DAY"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview_display_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+</LinearLayout>
